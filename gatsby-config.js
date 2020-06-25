@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `divybe`,
+    description: `Easily split expensives with your travel companions`,
+    author: `Dan Thistlethwaite`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -37,5 +37,25 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lobster Two`,
+            variants: [`Regular 400`]
+          },
+          {
+            family: `Roboto Slab`,
+            variants: [`Regular 400`, `Medium 500`]
+          },
+          {
+            family: `Roboto`,
+            variants: [`Regular 400`]
+          }
+        ]
+      }
+    }
+
   ],
 };

@@ -2,39 +2,26 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Button from "../components/button"
+import Travelers from "../images/undraw_travelers.svg"
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+      <section className="flex my-16 md:my-32 h-auto">
+        <div style={{ fontFamily: "Roboto" }} className="max-w-2xl lg:max-w-xl">
+          <h1 className="text-2xl md:text-4xl font-medium text-gray-800 leading-tight">Easily divide exepenses with your travel companions</h1>
+          <p className="my-6 text-xl md:text-2xl text-gray-700">Divybe is a simple app that keeps track of your shared expenses while you travel. Make sure you get paid!</p>
+          <div className="flex flex-wrap">
+            <Button type="primary" url="https://app.divybe.com" content="Check it out" />
+            <Button type="secondary" url="#" content="Find out more" />
+          </div>
+        </div>
+        <img src={Travelers} className="pl-12 xl:pl-24 w-0 lg:w-auto" />
       </section>
     </Layout>
   );
