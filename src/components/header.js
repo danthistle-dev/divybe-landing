@@ -14,7 +14,7 @@ function Header() {
   `);
 
   return (
-    <header className="container mx-auto px-6">
+    <header id="header" className="container mx-auto px-6">
       <div className="flex flex-wrap items-center justify-between my-8">
         <Link to="/">
           <h1 className="text-white text-4xl" style={{ fontFamily: "Lobster Two", color: "#ff3d4b" }}>
@@ -54,7 +54,7 @@ function Header() {
             },
           ].map((link) => (
             <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
+              className="block mt-4 text-red-600 font-medium no-underline md:inline-block md:mt-0 md:ml-6"
               key={link.title}
               to={link.route}
             >

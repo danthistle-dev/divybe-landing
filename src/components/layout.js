@@ -6,10 +6,10 @@ import "../css/style.css"
 
 function Layout({ children }) {
   return (
-    <div className="">
+    <div id="top" className="">
       <Header />
 
-      <main className="container mx-auto px-6">
+      <main className="">
         {children}
       </main>
 
