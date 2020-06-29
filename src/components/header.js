@@ -14,7 +14,7 @@ function Header() {
   `);
 
   return (
-    <header id="header" className="container mx-auto px-6">
+    <header className="container mx-auto px-6">
       <div className="flex flex-wrap items-center justify-between my-8">
         <Link to="/">
           <h1 className="text-white text-4xl" style={{ fontFamily: "Lobster Two", color: "#ff3d4b" }}>

@@ -85,7 +85,7 @@ const IndexPage = () => {
       </footer>
 
       <button
-        onClick={() => scrollTo("#header")}
+        onClick={() => scrollTo("#top")}
         className="fixed right-0 bottom-0 m-6 p-2"
       >        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-12 h-12 fill-current text-red-400 transition duration-300 ease-in-out hover:text-red-500">
